@@ -6,7 +6,197 @@
     "scene" : 0,
     "scenes" : [
         {
-            "name" : "Scene"
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Normal_Neck"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
+            "name" : "Normal_neck",
+            "pbrMetallicRoughness" : {}
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "name" : "Texture_Pants",
+            "pbrMetallicRoughness" : {}
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Low_polly_Normal_Neck.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Normal_Neck_Test",
+            "uri" : "Normal_Neck_Test.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 21738,
+            "max" : [
+                0.6685015559196472,
+                4.441967487335205,
+                0.5070192813873291
+            ],
+            "min" : [
+                -0.6968715190887451,
+                1.8167974948883057,
+                -0.4989772439002991
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 21738,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 21738,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 116094,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 117531,
+            "max" : [
+                0.8064638376235962,
+                2.5499720573425293,
+                0.513597309589386
+            ],
+            "min" : [
+                -0.8000621795654297,
+                -0.009623527526855469,
+                -0.4841405749320984
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 117531,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 117531,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5125,
+            "count" : 176295,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 260856,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 260856,
+            "byteOffset" : 260856
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 173904,
+            "byteOffset" : 521712
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 232188,
+            "byteOffset" : 695616
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1410372,
+            "byteOffset" : 927804
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1410372,
+            "byteOffset" : 2338176
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 940248,
+            "byteOffset" : 3748548
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 705180,
+            "byteOffset" : 4688796
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 5393976,
+            "uri" : "Basic_Jersey.bin"
         }
     ]
 }
