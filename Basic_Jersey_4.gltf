@@ -15,7 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Normal_Neck",
+            "name" : "V_Neck",
             "rotation" : [
                 0.7071068286895752,
                 0,
@@ -32,7 +32,7 @@
                 0,
                 0
             ],
-            "name" : "Default OBJ.002",
+            "name" : "Aksen_V_Neck",
             "normalTexture" : {
                 "index" : 0,
                 "texCoord" : 0
@@ -48,20 +48,51 @@
                     "texCoord" : 0
                 }
             }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Main_Color_V_Neck",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 3,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 4,
+                    "texCoord" : 0
+                }
+            }
         }
     ],
     "meshes" : [
         {
-            "name" : "Low_polly_pants_2.002",
+            "name" : "Low_polly_V_neck_2.001",
             "primitives" : [
                 {
                     "attributes" : {
                         "POSITION" : 0,
                         "NORMAL" : 1,
-                        "TEXCOORD_0" : 2
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
                     },
-                    "indices" : 3,
+                    "indices" : 4,
                     "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 5,
+                        "NORMAL" : 6,
+                        "TEXCOORD_0" : 7,
+                        "COLOR_0" : 8
+                    },
+                    "indices" : 9,
+                    "material" : 1
                 }
             ]
         }
@@ -75,38 +106,49 @@
         },
         {
             "source" : 2
+        },
+        {
+            "source" : 3
+        },
+        {
+            "source" : 2
         }
     ],
     "images" : [
         {
             "mimeType" : "image/png",
-            "name" : "UV_NORMAL_NECK_NORMAL",
-            "uri" : "UV_NORMAL_NECK_NORMAL.png"
+            "name" : "UV_V_NECK_NORMAL",
+            "uri" : "UV_V_NECK_NORMAL.png"
         },
         {
             "mimeType" : "image/png",
-            "name" : "UV_NORMAL_NECK_DIFFUSE",
-            "uri" : "UV_NORMAL_NECK_DIFFUSE.png"
+            "name" : "UV_V_NECK_AKSEN_DIFFUSE",
+            "uri" : "UV_V_NECK_AKSEN_DIFFUSE.png"
         },
         {
             "mimeType" : "image/png",
-            "name" : "UV_NORMAL_NECK_ROUGHNESS",
-            "uri" : "UV_NORMAL_NECK_ROUGHNESS.png"
+            "name" : "UV_V_NECK_ROUGHNESS_2",
+            "uri" : "UV_V_NECK_ROUGHNESS_2.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "UV_V_NECK_DIFFUSE",
+            "uri" : "UV_V_NECK_DIFFUSE.png"
         }
     ],
     "accessors" : [
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 1827,
+            "count" : 350,
             "max" : [
                 0.8216671943664551,
-                0.5360614657402039,
-                0.011966228485107422
+                0.3885188102722168,
+                0.011863470077514648
             ],
             "min" : [
-                -0.8192317485809326,
-                -0.5290944576263428,
+                -0.8152766227722168,
+                -0.4463691711425781,
                 -4.475893020629883
             ],
             "type" : "VEC3"
@@ -114,47 +156,123 @@
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 1827,
+            "count" : 350,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 1827,
+            "count" : 350,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 350,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
             "componentType" : 5123,
-            "count" : 8922,
+            "count" : 1194,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1477,
+            "max" : [
+                0.81374591588974,
+                0.5360614657402039,
+                -0.0677943229675293
+            ],
+            "min" : [
+                -0.8098013401031494,
+                -0.5290944576263428,
+                -4.452319622039795
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1477,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 1477,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 1477,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5123,
+            "count" : 7728,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 21924,
+            "byteLength" : 4200,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 21924,
-            "byteOffset" : 21924
+            "byteLength" : 4200,
+            "byteOffset" : 4200
         },
         {
             "buffer" : 0,
-            "byteLength" : 14616,
-            "byteOffset" : 43848
+            "byteLength" : 2800,
+            "byteOffset" : 8400
         },
         {
             "buffer" : 0,
-            "byteLength" : 17844,
-            "byteOffset" : 58464
+            "byteLength" : 5600,
+            "byteOffset" : 11200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2388,
+            "byteOffset" : 16800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17724,
+            "byteOffset" : 19188
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17724,
+            "byteOffset" : 36912
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 11816,
+            "byteOffset" : 54636
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 23632,
+            "byteOffset" : 66452
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 15456,
+            "byteOffset" : 90084
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 76308,
+            "byteLength" : 105540,
             "uri" : "Basic_Jersey_4.bin"
         }
     ]
