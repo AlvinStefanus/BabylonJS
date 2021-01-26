@@ -33,13 +33,20 @@
                 0
             ],
             "name" : "Default OBJ.002",
+            "normalTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
-                    "index" : 0,
+                    "index" : 1,
                     "texCoord" : 0
                 },
                 "metallicFactor" : 0,
-                "roughnessFactor" : 0
+                "metallicRoughnessTexture" : {
+                    "index" : 2,
+                    "texCoord" : 0
+                }
             }
         }
     ],
@@ -62,13 +69,29 @@
     "textures" : [
         {
             "source" : 0
+        },
+        {
+            "source" : 1
+        },
+        {
+            "source" : 2
         }
     ],
     "images" : [
         {
             "mimeType" : "image/png",
-            "name" : "UV_NOMRAL_NECK_NO_LIGHTS",
-            "uri" : "UV_NOMRAL_NECK_NO_LIGHTS.png"
+            "name" : "UV_NORMAL_NECK_NORMAL",
+            "uri" : "UV_NORMAL_NECK_NORMAL.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "UV_NORMAL_NECK_DIFFUSE",
+            "uri" : "UV_NORMAL_NECK_DIFFUSE.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "UV_NORMAL_NECK_ROUGHNESS",
+            "uri" : "UV_NORMAL_NECK_ROUGHNESS.png"
         }
     ],
     "accessors" : [
