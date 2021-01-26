@@ -57,14 +57,18 @@
                 0
             ],
             "name" : "Main_Color_V_Neck",
+            "normalTexture" : {
+                "index" : 3,
+                "texCoord" : 0
+            },
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
-                    "index" : 3,
+                    "index" : 4,
                     "texCoord" : 0
                 },
                 "metallicFactor" : 0,
                 "metallicRoughnessTexture" : {
-                    "index" : 4,
+                    "index" : 5,
                     "texCoord" : 0
                 }
             }
@@ -106,6 +110,9 @@
         },
         {
             "source" : 2
+        },
+        {
+            "source" : 0
         },
         {
             "source" : 3
